@@ -1,0 +1,12 @@
+<p>
+  ng-switch works!
+</p>
+
+<div [ngSwitch]="signal">
+
+  <p *ngSwitchCase="'A'">Signal indicates 'A'</p>
+  <p *ngSwitchCase="'B'">Signal indicates 'B'</p>
+  <p *ngSwitchCase="'C'">Signal indicates 'C'</p>
+  <p *ngSwitchDefault>Noisy signal or Invalid signal</p>
+
+  </div>

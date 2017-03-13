@@ -1,0 +1,19 @@
+<p>
+  form-control works!
+</p>
+
+<div class="ui raised segment">
+  <h2 class="ui header">Demo Form: Sku</h2>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" class="ui form">  <!-- f = formgroup -->
+      <div class="field">
+      <label for="skuInput">SKU</label>
+      <input type="text" id="skuInput" placeholder="SKU" name="sku" ngModel> 
+      </div>
+      <button type="submit" class="ui button">Submit</button>
+    </form>
+  </div>
+
+<label for="2wayDataBind"></label>  
+<input id="2wayDataBind" type="text" id="skuInput" placeholder="SKU" name="sku" [(ngModel)]="twoDataBindVar"> 
+  <h2>Two way data binding</h2>
+  <h3>{{twoDataBindVar}}</h3>

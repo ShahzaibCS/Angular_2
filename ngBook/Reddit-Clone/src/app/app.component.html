@@ -1,0 +1,25 @@
+<div>
+
+<!--<div>
+  <h1><img src="assets/images/ng-book-2-minibook.png" alter="ng-book-2" height="30px">   
+      <span>ng-book-2</span>Angular 2 Simple Reddit</h1>
+</div>-->
+
+<form class="ui large form segment">
+  <h3 class="ui header">Add a Link</h3>
+ <div class="field">
+  <label for="title">Title:</label>
+  <input name="title" #title>
+ </div>
+  <div class="field">
+   <label for="link">Link:</label>
+   <input name="link" #link>
+  </div>
+  <button (click)="addArticle(title,link)" class="ui positive right floated button">Submit link</button>
+</form>
+</div>
+
+<div class="ui grid posts">
+  <app-article *ngFor="let article of articles" [article]="article">
+  </app-article>
+</div>
